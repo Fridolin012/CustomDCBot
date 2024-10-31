@@ -95,7 +95,7 @@
       "name": "captchaLevel",
       "humanName": {
         "en": "Difficulty of captcha",
-        "de": "Schwäre des Captcha"
+        "de": "Schwierigkeit des Captchas"
       },
       "default": {
         "en": "medium",
