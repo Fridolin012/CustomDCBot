@@ -14,7 +14,7 @@
       "name": "channelID",
       "humanName": {
         "en": "Channel",
-        "de": "Channel"
+        "de": "Kanal"
       },
       "default": {
         "en": ""
