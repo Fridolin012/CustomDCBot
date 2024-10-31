@@ -14,7 +14,7 @@
       "name": "type",
       "humanName": {
         "en": "Message-Type",
-        "de": "Nachricht-Type"
+        "de": "Nachricht-Typ"
       },
       "default": {
         "en": ""
