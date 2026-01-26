@@ -1,0 +1,97 @@
+{
+  "filename": "storage.json",
+  "humanName": {
+    "en": "Data Storage"
+  },
+  "description": {
+    "en": "Configure how long moderation logs and leaver data are kept."
+  },
+  "content": [
+    {
+      "name": "enablePingHistory",
+      "humanName": {
+        "en": "Enable Ping History"
+      },
+      "description": {
+        "en": "If enabled, the bot will keep a history of pings to enforce moderation actions."
+      },
+      "type": "boolean",
+      "default": {
+        "en": true
+      }
+    },
+    {
+      "name": "pingHistoryRetention",
+      "humanName": {
+        "en": "Ping History Retention"
+      },
+      "description": {
+        "en": "Decides on how long to keep ping logs. Minimum is 4 weeks (1 month) with a maximum of 24 weeks (6 months). This is the length factor of the 'Basic' punishment timeframe."
+      },
+      "type": "integer",
+      "default": {
+        "en": 12
+      },
+      "minValue": "4",
+      "maxValue": "24",
+      "dependsOn": "enablePingHistory"
+    },
+    {
+      "name": "deleteAllPingHistoryAfterTimeframe",
+      "humanName": {
+        "en": "Delete all the pings in history after the timeframe?"
+      },
+      "description": {
+        "en": "If enabled, the bot will delete ALL the pings history of an user after the timeframe instead of only the ping(s) exceeding the timeframe in the history."
+      },
+      "type": "boolean",
+      "default": {
+        "en": false
+      }
+    },
+    {
+      "name": "modLogRetention",
+      "humanName": {
+        "en": "Moderation Log Retention (Months)"
+      },
+      "description": {
+        "en": "How long to keep records of punishments (1-12 Months). This is applied when moderation actions are enabled."
+      },
+      "type": "integer",
+      "default": {
+        "en": 6
+      },
+      "minValue": "1",
+      "maxValue": "12"
+    },
+    {
+      "name": "enableLeaverDataRetention",
+      "humanName": {
+        "en": "Keep user logs after they leave"
+      },
+      "description": {
+        "en": "If enabled, the bot will keep a history of the user after they leave."
+      },
+      "type": "boolean",
+      "default": {
+        "en": true
+      }
+    },
+    {
+      "name": "leaverRetention",
+      "humanName": {
+        "en": "Leaver Data Retention (Days)"
+      },
+      "description": {
+        "en": "How long to keep data after a user leaves (1-7 Days)."
+      },
+      "type": "integer",
+      "default": {
+        "en": 1
+      },
+      "minValue": "1",
+      "maxValue": "7",
+      "dependsOn": "enableLeaverDataRetention"
+    }
+  ]
+}
