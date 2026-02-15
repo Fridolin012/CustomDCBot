@@ -65,6 +65,7 @@ module.exports.run = async function (client, msg) {
     else if (msg.content === '420') reactions = [await msg.react('🚬')];
     else if (msg.content === '100') reactions = [await msg.react('💯')];
     else if (msg.content === '110') reactions = [await msg.react('🚓')];
+    else if (msg.content === '67') reactions = [await msg.react('🤲')];
     else if (msg.content === '112' || msg.content === '911') reactions = [await msg.react('🚑'), await msg.react('🚒')];
     else if (msg.content === '69') reactions = [await msg.react('🇳'), await msg.react('🇮'), await msg.react('🇨'), await msg.react('🇪')];
     else reactions = [await msg.react(moduleConfig['success-reaction'])];
